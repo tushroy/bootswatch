@@ -1,59 +1,96 @@
-// Readable 2.3.1
+// Readable 3.0.3
 // Bootswatch
 // -----------------------------------------------------
 
+@import url("//fonts.googleapis.com/css?family=Raleway:700");
 
-// TYPOGRAPHY
-// -----------------------------------------------------
+// Navbar =====================================================================
 
-@import url('//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
+.navbar {
+	font-family: @headings-font-family;
+	text-transform: uppercase;
 
-// SCAFFOLDING
-// -----------------------------------------------------
-
-// NAVBAR
-// -----------------------------------------------------
-
-div.subnav {
-
-	.nav > li > a,
-	.nav > .active > a,
-	.nav > .active > a:hover {
-		color: @textColor;
+	&-nav > li > a {
+		padding-top: @navbar-padding-vertical + 6px;
 	}
 
-	&-fixed {
-		top: @navbarHeight + 1;
+	&-nav > .active > a,
+	&-nav > .active > a:hover {
+		text-decoration: underline;
 	}
-}
 
-// NAV
-// -----------------------------------------------------
+	&-default .navbar-nav > .active > a:hover {
+		color: @navbar-default-link-hover-color;
+	}
 
-// BUTTONS
-// -----------------------------------------------------
+	&-inverse .navbar-nav > .active > a:hover {
+		color: @navbar-inverse-link-hover-color;
+	}
 
-// TABLES
-// -----------------------------------------------------
-
-// FORMS
-// -----------------------------------------------------
-
-// DROPDOWNS
-// -----------------------------------------------------
-
-// ALERTS, LABELS, BADGES
-// -----------------------------------------------------
-
-// MISC
-// -----------------------------------------------------
-
-.hero-unit {
-
-	h1, h2, h3, h4, h5, h6 {
-		margin: 13px 0;
+	&-brand {
+		padding-top: @navbar-padding-vertical + 5px;
 	}
 }
 
-// MEDIA QUERIES
-// -----------------------------------------------------
+// Buttons ====================================================================
+
+.btn {
+	font-family: @headings-font-family;
+	text-transform: uppercase;
+}
+
+// Typography =================================================================
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+}
+
+p {
+	margin-bottom: 1.4em;
+}
+
+// Tables =====================================================================
+
+// Forms ======================================================================
+
+// Navs =======================================================================
+
+.pagination {
+
+	.active > a,
+	.active > a:hover {
+		border-color: #ddd;
+	}
+
+	&-lg > li > a,
+	&-lg > li > span {
+		padding: 14px 24px;
+	}
+}
+
+// Indicators =================================================================
+
+.alert {
+	a,
+	.alert-link {
+		color: @alert-success-text;
+		text-decoration: underline;
+	}
+}
+
+// Progress bars ==============================================================
+
+// Containers =================================================================
+
+.panel {
+
+	&-primary,
+	&-success,
+	&-warning,
+	&-danger,
+	&-info {
+		.panel-heading {
+			color: #fff;
+		}
+	}
+}

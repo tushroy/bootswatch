@@ -1,7 +1,7 @@
 Bootswatch
 ==========
 
-Bootswatch is a collection of free themes for [Twitter Bootstrap](http://twitter.github.com/bootstrap/). Check it out at [bootswatch.com](http://bootswatch.com).
+Bootswatch is a collection of free themes for [Bootstrap](http://getbootstrap.com/). Check it out at [bootswatch.com](http://bootswatch.com).
 
 Usage
 -----
@@ -14,26 +14,22 @@ For use with Rails, check out [bootswatch-rails](https://github.com/maxim/bootsw
 
 Customization
 ------
-Bootswatch is an open source project, and you’re welcome to modify the themes further. If you’re interested, fork or follow the GitHub repository. The files of interest are in the `gh-pages` branch.
+Bootswatch is an open source project, and you’re welcome to fork and modify the themes.
 
-Each raw theme consists of two LESS files. One is `variables.less`, which is included by default in Bootstrap and allows you to customize [these settings](http://twitter.github.com/bootstrap/less.html#variables). The other is called `bootswatch.less` and introduces more extensive structural changes.
+Each raw theme consists of two LESS files. One is `variables.less`, which is included by default in Bootstrap and allows you to customize [these settings](http://getbootstrap.com/customize/#less-variables). The other is called `bootswatch.less` and introduces more extensive structural changes.
 
-Check out the README in the [swatchmaker directory](https://github.com/thomaspark/bootswatch/tree/master/swatchmaker) for step-by-step instructions on building your own swatch.
+Check out the [Help page](http://bootswatch.com/help/) for more details on building your own theme.
 
 API
 -----
 
 A simple API is available for integrating your platform with Bootswatch.
 
-The swatch objects are housed in an array called `themes`, and each swatch has the following properties:  `name`, `description`, `preview`, `thumbnail`, `css`, `css-min`, `less`, and `less-variables`.
+The swatch objects are housed in an array called `themes`, and each swatch has the following properties:  `name`, `description`, `preview`, `thumbnail`, `css`, `cssMin`, `less`, and `lessVariables`.
 
-CORS and JSONP are supported. Send your request to `http://api.bootswatch.com`.
+CORS and JSONP are supported. Send your request to `http://api.bootswatch.com/3/`.
 
-A simple demo, using mustache.js for templating: http://jsbin.com/asowud/1/edit
-
-Feedback
-------
-Please send feedback to thomas@thomaspark.me. For more information, visit http://thomaspark.me/2012/02/introducing-bootswatch/.
+More info at http://bootswatch.com/help/#api
 
 Author
 ------
@@ -45,16 +41,16 @@ Thanks
 ------
 [Mark Otto](http://github.com/markdotto) and [Jacob Thornton](http://github.com/fat) for [Bootstrap](https://github.com/twitter/bootstrap).
 
-[James Taylor](http://github.com/jostylr) for [cors-lite](https://github.com/jostylr/cors-lite).
+[Jenil Gogari](http://www.jgog.in/) for his contributions to the Flatly theme.
 
-[Zack Maril](http://github.com/zmaril) for [bootswatch/swatchmaker/watcher.rb](https://github.com/thomaspark/bootswatch/blob/master/swatchmaker/watcher.rb).
+[James Taylor](http://github.com/jostylr) for [cors-lite](https://github.com/jostylr/cors-lite).
 
 [Gerald Hiller](https://twitter.com/geraldhiller) for the favicon.
 
 
 Copyright and License
 ----
-Copyright 2012 Thomas Park
+Copyright 2013 Thomas Park
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
